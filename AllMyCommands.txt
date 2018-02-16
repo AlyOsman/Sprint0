@@ -1,0 +1,16 @@
+git init
+git add --all
+git checkout -- File3.txt
+git commit -m "First Commit"
+git remote add origin https://github.com/AlyOsman/Sprint0.git
+git push -u origin master
+touch README.md
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m "Added README file to ReadMe Branch"
+git checkout master
+git merge ReadMe
+git add --all
+git commit -m "Adding AllyMyCommands.txt"
+
